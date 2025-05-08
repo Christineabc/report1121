@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+         body{
+        background-color: wheat;
+        font-family: "Caveat", cursive;
+    }
+
+    nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: salmon;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+    nav ul{
+        display: inline-block;
+    }
+
+    nav ul li{
+        list-style-type: none;
+        float: left;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: azure;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    nav ul li a:hover{
+        color :#e5bb4b;
+        font-weight: bolder;
+        background-color: #498eaf;
+    }
+    .wrapper {
+    margin-top: 80px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .banner{
+        width: 100%;
+    }
+    h2{
+        /* background-color: olive;
+        background:linear-gradient(olive, skyblue);
+        box-sizing: border-box;
+        margin: auto 400px;
+        color: white;
+        text-align: center;
+        padding: 10px 10px; */
+        color:#283b42;
+        border: 1px solid #85b8cb;
+        border-left: 10px solid #d1dddb;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: linear-gradient(to right, wheat,#1d6a96);
+        
+    }
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #7fb174;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><i class="fa-solid fa-house-user text-secondary"></i><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+           
+        </nav>
+    </div>
+    
+    <h2>Ｗork experience <i class="fa-solid fa-briefcase text-secondary wow animate__swing"data-wow-duration="1s" data-wow-delay="0s"data-wow-iteration="2"></i></h2>
+    <ul type="circle">
+        <li>T&T demo promoter (2025 - present)</li>
+        <li>Vocational Training Institute( Taichung/Taiwan) Jan 2024 - Jun 2024</li>
+        <li>Staff Member, Overseas Education Department Ta-Ming High School – Taiwan Aug 2023 – Jan 2024</li>
+    </ul>
+    <h2>Skills <i class="fa-solid fa-file-code text-primary"></i></h2>
+    <ul type="square">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Designer</li>
+        <li>Adobe Illustator</li>
+    </ul>
+    <h2>Certifications<i class="fa-solid fa-certificate text-warning"></i></h2>
+    <dl>
+        <dt><span>Vocational Training Institute(Taichung/Taiwan)certification</span></dt>
+        <dd>Completed in 2024, focus on web design</dd>
+    </dl>
+    <hr size="10" color="#a46843">
+
+    <h2>Education<i class="fa-solid fa-user-graduate text-danger"></i></h2>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+       <tbody>
+        <tr>
+            <td>Diploma in Front End Development</td>
+            <td>Greystone College Vancouver BC</td>
+            <td>2025 - 2026</td>
+        </tr>
+        <tr>
+            <td>Bachelor of Business Economics</td>
+            <td>Feng Chia University/Taiwan</td>
+            <td>Sep 2015 - Jun 2019</td>
+        </tr>
+       </tbody>
+       <tfoot>
+        <tr>
+            <td colspan="3">Additional coursework in html/css and JavaScript</td>
+        </tr>
+       </tfoot>
+    </table>
+    <hr size="10" color="#a46843">
+    <div>
+        <h2>Work Experience</h2>
+    <table border="1" width="100%" cellpadding="5" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Years</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Overseas education</td>
+                <td>Ta Ming High school</td>
+                <td>Aug 2023 – Jan 2024</td>
+            </tr>
+
+            <tr>
+                <td>Senior Clerk (Bank Teller)Bangkok Bank</td>
+                <td>Oct 2019 – Apr 2023</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Years of Experience: 5+ Years</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    </div>
+    <hr size="10" color="#a46843">
+ 
+    <h2>About Me</h2>
+    <p>Watch my introduction video:</p>
+    <video width="640" height="400" controls poster="assets/shiba.avif">
+        <source src="assets/intro-video.MOV">
+    </video>
+    <h2>My Voice Introduction</h2>
+    <p>Listen to a short introduction about me:</p>
+    <audio controls>
+        <source src="assets/intro-video.m4a">
+    </audio>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</html>

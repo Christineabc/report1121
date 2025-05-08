@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body {
+            background: url('assets/nature01.avif') no-repeat center center/cover;
+            font-family: "Caveat", cursive;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 222, 173, 0.9);
+            padding: 15px 5%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        header .logo img {
+            width: 60px;
+        }
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #09777d;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.9);
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #09777d;
+            box-shadow: 0 0 8px rgba(9, 119, 125, 0.3);
+        }
+        button {
+            background: #09777d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/canada.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-chalkboard-user text-info"></i><a href="index.html">Home</a></li>
+                <li><i class="fa-solid fa-house-user text-info"></i><a href="about.html">About</a></li>
+                <li><i class="fa-solid fa-file text-info"></i><a href="projects.html">Projects</a></li>
+                <li><i class="fa-brands fa-telegram text-info"></i><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container wow animate__fadeInUp" data-wow-duration="1s">
+        <h2><i class="fa-solid fa-phone text-secondary wow animate__swing"data-wow-duration="1s" data-wow-delay="0s"data-wow-iteration="2"></i>Contact Me</h2>
+        <form action="submit">
+            <label for="name" class="text-success">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email" class="text-info">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="password" class="text-danger">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <label class="text-warning">Job Type Preference:</label>
+            <select name="job_type">
+                <option value="Full-Time">Full-Time</option>
+                <option value="Part-Time">Part-Time</option>
+            </select>
+            <label>Skills:</label>
+            <input type="checkbox" id="css" name="skills" value="CSS"> CSS
+            <input type="checkbox" id="js" name="skills" value="JavaScript"> JavaScript<br>
+            <label for="contact_method" class="text-warning bg-primary">Preferred Contact Method:</label>
+            <select id="contact_method" name="contact_method">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="linkedin">LinkedIn</option>
+            </select>
+            <label for="message" class="text-warning bg-success">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
